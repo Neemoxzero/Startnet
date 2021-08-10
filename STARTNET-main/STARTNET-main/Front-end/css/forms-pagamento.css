@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 229, 231);
+  color: #333;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 611px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 611px) {
+  .info {
+    width: 95%;
+  }
+}
+
+.card {
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 15px -6px black;
+}
+
+@media screen and (min-width: 611px) {
+  .card {
+    max-width: 375px;
+  }
+  .info-card {
+    max-width: 900px;
+  }
+}
+
+.card #title {
+  background-color: #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.card #title h3 {
+  font-size: 18px;
+  color: #080e45;
+  font-family: "Oxanium", Arial, sans-serif;
+  margin-top: 5px;
+
+  padding: 2px;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.info-title h3 {
+    font-size: 22px;
+}
+
+.info-title p {
+    font-size: 18px;
+    margin: 7px 0 14px 0;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px 8px;
+  margin: 8px 0px 15px 0px;
+  text-align: left;
+  color: #000;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.turno {
+    display: flex;
+}
+.turno input[type='radio'] {
+    width: auto;
+    margin: 8px;
+}
+
+.cvv {
+  max-width: 95%;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+}
+
+@media screen and (min-width: 611px) {
+  input {
+    max-width: 93%;
+  }
+}
+
+#pagar {
+  color: white;
+  background-color: #e97108;
+  margin: 40px auto;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Rubik", Verdana;
+  font-size: 16px;
+  transition: 0.2s background;
+}
+
+#pagar:hover {
+  background: #ff8314;
+}
+
+@media screen and (min-width: 611px) {
+  #pagar {
+    max-width: 375px;
+  }
+}

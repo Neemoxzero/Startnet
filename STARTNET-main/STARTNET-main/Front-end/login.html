@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script defer src="./js/forms.js"></script>
+<title>Entrar em StartNet</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
+  rel="stylesheet" />
+
+<body>
+  <div id="main-container">
+    <a href="./index.html"><img class="logo" src="./assets/logo.png"></a>
+    <h1>Login</h1>
+    <form id="login-form" action="forms-login" method="POST">
+      <div>
+        <label for="email" class="infor-label">E-mail</label>
+        <input type="email" class="login" name="email" placeholder="Digite seu e-mail" autofocus></input>
+      </div>
+      <div>
+        <label for="name" class="infor-label">Senha</label>
+        <input type="password" class="login" name="name" placeholder="Digite a sua senha"></input>
+        <label id="link-password">
+          <a href="#">Esqueceu a senha?</a>
+        </label>
+      </div>
+      <button type="submit" id="access" onclick="Acessar()">Acessar</button>
+      <div id="register-container">
+          <label>Ainda não tem uma conta?</label>
+          <a href="data.html">Registrar</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

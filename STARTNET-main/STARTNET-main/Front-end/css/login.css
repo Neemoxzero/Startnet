@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body {
+    padding-top: 10vh;
+    background: rgb(217, 217, 217);
+    text-align: center;
+}
+.logo {
+    height:100px;
+    width: 120px;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #080e45;
+    text-transform: uppercase;
+}
+#main-container{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+    padding: 30px;
+}
+.infor-label {
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    text-align: start;
+}
+
+.login {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid 2px #323232;
+    text-align: start;
+    margin-bottom: 30px;
+}
+.login:focus {
+    border-bottom: solid 2px #080e45;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus {
+    outline: none;
+}
+#link-password {
+    text-align: end;
+}
+#link-password a, #register-container a {
+    text-decoration: none;
+    color: rgb(9, 9, 199);
+    font-size: 15px;
+}
+#link-password a:hover, #register-container a:hover {
+    color: rgb(9, 9, 199);
+    text-decoration: underline;
+}
+#access {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   border: none;
+   height: 40px;
+   width: 100%;
+   border-radius: 20px;
+   margin-top: 25px;
+   color: #fff;
+   background-color: #08558B;
+   cursor: pointer;
+}
+#access:hover {
+    background-color: #080e45;
+    transition: .5s;
+}
+#register-container {
+    margin-top: 20px;
+}
+
